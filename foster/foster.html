@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cat's Cradle Animal Rescue Website">
+    <meta name="author" content="Meghan Hartman">
+    <meta name="generator" content="Hugo 0.145.0">
+    <title>Foster · Cat's Cradle</title>
+
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+
+    <script src="../assets/js/color-modes.js"></script>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- END LOADING BOOTSTRAP CSS -->
+
+    <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="foster.css" rel="stylesheet">
+    
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
+  <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+</button>
+<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+    </div>
+
+    
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Cat's Cradle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../adopt/adopt.html">Adopt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../foster/foster.html">Foster</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../coffee-cats/coffee-cats.html">Coffee &amp; Cats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<div class="container py-5">
+  <h1 class="mb-3 text-center"><strong>Become a Foster!</strong></h1>
+
+  <p>Each year, we take over 700 cats and kittens into our care.  This is possible by our amazing foster homes!  We are a foster based rescue and rely on the generosity and compassion of our fosters.  You can help us see more lives by temporarily opening your home and helping us help more kitties!</p>
+  <p>Our Foster Home offers support as we have a fantastic Foster Coordinator and team that will walk you through the steps of fostering.  Training is provided and we provide all any medical care, food and litter for your new fosters.  
+  </p>
+  <p>You choose, adults or kittens, short term or long term!  Once we know your preferences, we will pair you with the perfect match. 
+  </p>
+  <p> Community is everything, and we have 250 members of our Foster Facebook community that can answer your questions, network your foster kitties and support you along the way.
+  </p>
+  <p>The single most important factor of fostering, other than the kitty care, is the promotion of your fosters.  We offer Saturday Adoption Events at PetSmart in Waynesboro and Harrisonburg, and our very popular Cat Cafe in downtown Harrisonburg.  We also use adoption sites, our website and then of course promotion on social media.    
+  </p>
+  <p>We would love for you to consider opening your home as a foster and become a part of our foster family!   
+  </p>
+
+  <div class="foster-buttons">
+    <a href="https://www.shelterluv.com/matchme/foster/CCVA/Cat" class="btn btn-primary" target="_blank">Foster Application</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWGawZp2jmMuwO9-cG_PMf6O6RsIOEvUpSRh2t90HZMV6X3w/viewform" class="btn btn-secondary" target="_blank">Foster Agreement</a>
+    <a href="https://image3.zibster.com/8929/20250211141046_474329.pdf" class="btn btn-success" target="_blank">Foster Orientation</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScq--AemKAa0npZySi10KtTONCcycrh5cfeDTCCRBxYaiLRNw/viewform" class="btn btn-danger" target="_blank">Foster Quiz</a>
+  </div>
+
+<section class="faq">
+  <h2 class="faq-subheading">Frequently Asked Questions</h2>
+  <!-- FAQ content goes here -->
+</section>
+
+  <div class="accordion" id="faqAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+          What is a foster home?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Foster parents provide temporary homes for animals prior to adoption. Providing foster care is a wonderful and personal way to contribute to saving homeless pets and help them avoid the very high euthanasia rates in local shelters. Foster homes allow Cat’s Cradle to transfer animals out of these facilities and find new homes for them. Every Cat’s Cradle foster family is part of a lifesaving network!
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+          What skills are needed?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          It’s best to have some knowledge about companion animal behavior and health. We provide training for you, complete with a foster manual and a foster coordinator for you to contact with questions or concerns. Some of the cats most in need of foster care are those that require a little extra help or some training. Just by getting to know the kitty, you’ll help Cat’s Cradle and the forever home learn more about his/her personality prior to adoption.
+        </div>
+      </div>
+    </div>
+
+        <div class="accordion-item">
+      <h2 class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+          What about food and medical care?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          All cats receive wellness care prior to entering a foster home. There are wellness clinics for foster homes and medical bills are covered by Cat’s Cradle. Cat's Cradle is a partner with Hills, Science Diet and will provide food. We also provide litter if needed! You will need to drive your foster to get vaccinations, attend pet adoption events, and vet appointments.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+          What about when it's time to say goodbye?
+        </button>
+      </h2>
+      <div id="faq4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Giving up an animal that you’ve fostered, even to a wonderful forever home, can be difficult emotionally. Many adopters post updates and photos of their new kitty. It often helps to focus on the lives saved. Try and remember that as one foster kitty is adopted, room is made for another cat or kitten to be transferred out of a high-risk pound or shelter and into your care. Knowing that you were a part of saving a life and helping your foster transition into a loving home is tremendously rewarding.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+          How do I give fostering a try?
+        </button>
+      </h2>
+      <div id="faq5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          When you are ready, just fill out the two forms below and we will put you in touch with our foster program coordinator. We will discuss what types of cats you are comfortable with fostering. Maybe a momma with a litter of kittens? Bottle babies? One or two adult cats? Or a small family of rowdy teenagers? We have something for everyone! Foster parents significantly decrease the number of cats and kittens euthanized each year because shelters just don’t have space for them.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+
+  <!-- Footer-->
+        <footer class="custom-footer">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Cat's Cradle 2025</p></div>
+        </footer>
+  
+    </body>
+</html>
